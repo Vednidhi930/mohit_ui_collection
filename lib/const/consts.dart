@@ -1,0 +1,10 @@
+export 'package:flutter/material.dart';
+// export 'package:velocity_x/velocity_x.dart';
+export 'package:google_fonts/google_fonts.dart';
+export '../models/AppModel.dart';
+export '../../../../main/AppWidget.dart';
+export '../../../../main/AppStore.dart';
+export './colors.dart';
+export './images.dart';
+export './Lists.dart';
+export './strings.dart';

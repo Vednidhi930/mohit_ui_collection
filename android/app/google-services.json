@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "595998164300",
+    "project_id": "mohit-ui-collection",
+    "storage_bucket": "mohit-ui-collection.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:595998164300:android:e83bb16ff80d5a6a253be9",
+        "android_client_info": {
+          "package_name": "com.example.mohit_ui_collection"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2rAbvirGvwWLy3VTfuaHGs8SSl79ox3M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

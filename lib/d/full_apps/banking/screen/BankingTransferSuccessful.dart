@@ -1,0 +1,56 @@
+import 'package:nb_utils/nb_utils.dart';
+
+import '../../../../const/consts.dart';
+import 'package:flutter/material.dart';
+
+import '../../../../main/AppWidget.dart';
+import '../../../../const/strings.dart';
+
+import '../utils/BankingColors.dart';
+
+import '../utils/BankingImages.dart';
+import '../utils/BankingSlider.dart';
+import '../utils/BankingStrings.dart';
+import '../utils/BankingWidget.dart';
+
+class BankingTransferSuccessful extends StatefulWidget {
+  static var tag = "/BankingTransferSuccessful";
+
+  @override
+  _BankingTransferSuccessfulState createState() =>
+      _BankingTransferSuccessfulState();
+}
+
+class _BankingTransferSuccessfulState extends State<BankingTransferSuccessful> {
+  @override
+  Widget build(BuildContext context) {
+    var width = context.width();
+    return Scaffold(
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            8.height,
+            headerView(Banking_lbl_Transfer_Successful, width * 0.4, context),
+            24.height,
+            commonCachedNetworkImage(Banking_ic_walk2,
+                height: width * 0.6, width: width, fit: BoxFit.cover),
+            24.height,
+            Text(
+              Banking_lbl_Info_Transfer_Successful,
+              style: primaryTextStyle(color: Banking_TextColorSecondary),
+              textAlign: TextAlign.center,
+            ).center(),
+            8.height,
+            BankingButton(
+              textContent: Banking_lbl_Transaction_History,
+              onPressed: () {
+                finish(context);
+              },
+            ).paddingAll(16),
+          ],
+        ),
+      ),
+    );
+  }
+}

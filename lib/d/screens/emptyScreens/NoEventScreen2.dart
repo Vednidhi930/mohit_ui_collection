@@ -1,0 +1,55 @@
+import 'package:flutter/material.dart';
+import 'package:nb_utils/nb_utils.dart';
+
+import 'package:mohit_ui_collection/const/consts.dart';
+
+class NoEventScreen2 extends StatefulWidget {
+  static var tag = "/no_event2";
+  const NoEventScreen2({Key? key}) : super(key: key);
+
+  @override
+  _NoEventScreen2State createState() => _NoEventScreen2State();
+}
+
+class _NoEventScreen2State extends State<NoEventScreen2> {
+  //   @override
+  // void dispose() {
+  //   setStatusBarColor(context.scaffoldBackgroundColor);
+  //   super.dispose();
+  // }
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: Scaffold(
+        body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              height: 230,
+              child: commonCachedNetworkImage(
+                  '${GlobalUrl}images/emptyScreen1/noEvent2.png'),
+              decoration: BoxDecoration(
+                  color: grey.withOpacity(0.1), shape: BoxShape.circle),
+            ),
+            70.height,
+            Text('No Event', style: boldTextStyle(size: 20)),
+            16.height,
+            Text(
+              Mohit_UI_KitShortText,
+              style: primaryTextStyle(size: 15),
+              textAlign: TextAlign.center,
+            ).paddingSymmetric(vertical: 8, horizontal: 60),
+            32.height,
+            FloatingActionButton(
+              child: Icon(Icons.add, size: 30),
+              onPressed: () {
+                toast('Add Event');
+              },
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
